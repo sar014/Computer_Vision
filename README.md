@@ -25,6 +25,10 @@ Optimize corner detection by using efficient filtering, tunable non-maximum supp
 Implemented SURF, ORB, and SIFT feature detectors and descriptors for matching keypoints between two images, using BFMatcher with Lowe’s ratio test for reliable correspondences, and visualized the results with drawMatches.
 
 
+### Template Matching
+Implemented template matching to detect logos or stickers across different product images using normalized cross-correlation (TM_CCOEFF_NORMED). Conducted shape analysis, where simple geometric shapes such as circles, squares, and triangles are classified using Hu Moments. Implemented face detection, using a Haar Cascade-based approach to both webcam input and group photos to detect and count faces while drawing bounding boxes. Extended these concepts by building a LEGO brick detector that combines template matching with contour filtering for improved detection. Conducted a comparative study between the Haar Cascade method and a modern deep learning-based detector (MediaPipe) on the same video, evaluating their performance in terms of speed and detection accuracy (Conclusion present in notebook) . 
+
+
 ### LAB1 - CNN
 Implemented a convolutional neural network (CNN) for image classification on the CIFAR-10 dataset, designing convolutional, pooling, and fully connected layers to learn feature representations and classify images into 10 categories, and trained the model using Python and Keras/TensorFlow.
 
